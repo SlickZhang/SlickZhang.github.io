@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slickzz Blogs</title><link>/</link><description>Recent content on Slickzz Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 24 Mar 2025 23:00:00 -0300</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>/about/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>/about/</guid><description>&lt;h1 id="about">About&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slickzz Blogs</title><link>/</link><description>Recent content on Slickzz Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 13 Jun 2025 17:32:53 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>NETXDUO概述</title><link>/posts/netxduo%E6%A6%82%E8%BF%B0/</link><pubDate>Fri, 13 Jun 2025 17:32:53 +0800</pubDate><guid>/posts/netxduo%E6%A6%82%E8%BF%B0/</guid><description>&lt;h2 id="简介">简介&lt;/h2>
+&lt;p>Azure RTOS NetX Duo 是一个双 IPv4 和 IPv6 TCP/IP 网络堆栈，专为深度嵌入式、实时和物联网应用而设计。它具有多种功能。除了 TCP/IP IPv4/IPv6 网络堆栈外，它还提供了一个实现标准加密和哈希方法的加密库，以及一个支持安全网络连接的 TLS/DTLS 库。&lt;/p>
+&lt;p>
+&lt;figure style="text-align: center;">
+ &lt;img src="/images/netx_gaishu/NetXDuo_Overview.png" alt="" />
+ 
+&lt;/figure>&lt;/p>
+&lt;ul>
+&lt;li>NetX Duo 核心提供完整的 TCP/IP IPv4 IPV6 兼容堆栈，具有 3 种类型的 API：TCP/IP、UDP/IP 和 RAW API。&lt;/li>
+&lt;li>Crypto 核心实现了用于保护连接和交换加密数据的常见加密密码套件和哈希算法：AES、3DES、HMAC、RSA、SHA1、SHA224、SHA256、SHA384、SHA512、MD5、HMAC-SHA1 等（每种算法都有自己的实现文件 .c 和头文件 .h，方便应用程序选择和集成所需的算法）。&lt;/li>
+&lt;li>TLS 核心实现了安全连接 API。它基于 Crypto 核心和 NetX Duo 核心，支持 TLS 和 DTLS 协议及其不同变体。（TLS 1.0、TLS 1.2、TLS 1.3）。&lt;/li>
+&lt;/ul>
+&lt;p>它还支持X509公共签名证书协议。&lt;/p>
+&lt;ul>
+&lt;li>附加协议是一组预先支持的网络应用协议，可简化网络功能在最终用户应用程序中的集成。主要支持的协议如下：DHCP、DNS、mDNS、HTTP、HTTPS、FTP、TELNET、MQTT、SMTP、POP3、SNTP、SNMP 等。&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure style="text-align: center;">
+ &lt;img src="/images/netx_gaishu/NetXDuo_Folders.png" alt="NetX Duo 文件夹的组织方式" />
+ &lt;figcaption>NetX Duo 文件夹结构&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;h2 id="netxduo-集成在-stm32-微控制器">NetXDuo 集成在 STM32 微控制器&lt;/h2>
+&lt;p>NetX Duo 可以在任何网络硬件上运行，例如以太网、WiFi 模块、蜂窝调制解调器等。它需要一个低级驱动程序来在已选定的物理层和 NetX Duo 核心请求（初始化、传输数据、接收数据）之间进行交互。&lt;/p></description></item><item><title>About</title><link>/about/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>/about/</guid><description>&lt;h1 id="about">About&lt;/h1>
 &lt;p>关于本博客的一些约定。&lt;/p>
 &lt;p>&lt;code>topic&lt;/code> 对应的是主题内容，可以相互关联某些文章。&lt;/p>
 &lt;p>&lt;code>series&lt;/code> 对应的是相关系列。在本博客中，一般对应 MCU、Linux、FPGA 等内容。&lt;/p>
