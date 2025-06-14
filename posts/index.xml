@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Slickzz Blogs</title><link>/posts/</link><description>Recent content in Posts on Slickzz Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 15 Jun 2025 00:02:35 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>嵌入式调试词汇扫盲</title><link>/posts/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%B0%83%E8%AF%95%E8%AF%8D%E6%B1%87%E6%89%AB%E7%9B%B2/</link><pubDate>Sun, 15 Jun 2025 00:02:35 +0800</pubDate><guid>/posts/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%B0%83%E8%AF%95%E8%AF%8D%E6%B1%87%E6%89%AB%E7%9B%B2/</guid><description>&lt;p>现如今嵌入式计算机的调试技术已经很丰富了，有许许多多的软件和硬件去帮助程序员找出嵌入式软件上的逻辑漏洞以及嵌入式硬件上的缺陷等等。但是很多东西在概念上就存在大量的混用(ps:说难听点就是乱用)，不知道是英文翻译的问题还是开发人员的水平问题，各种词汇就很让人摸不着头脑，最常见也是最广泛的就是调试技术了。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Slickzz Blogs</title><link>/posts/</link><description>Recent content in Posts on Slickzz Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 15 Jun 2025 00:02:35 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>嵌入式调试词汇扫盲以及调试实战</title><link>/posts/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%B0%83%E8%AF%95%E8%AF%8D%E6%B1%87%E6%89%AB%E7%9B%B2%E4%BB%A5%E5%8F%8A%E8%B0%83%E8%AF%95%E5%AE%9E%E6%88%98/</link><pubDate>Sun, 15 Jun 2025 00:02:35 +0800</pubDate><guid>/posts/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%B0%83%E8%AF%95%E8%AF%8D%E6%B1%87%E6%89%AB%E7%9B%B2%E4%BB%A5%E5%8F%8A%E8%B0%83%E8%AF%95%E5%AE%9E%E6%88%98/</guid><description>&lt;p>现如今嵌入式计算机的调试技术已经很丰富了，有许许多多的软件和硬件去帮助程序员找出嵌入式软件上的逻辑漏洞以及嵌入式硬件上的缺陷等等。但是很多东西在概念上就存在大量的混用(ps:说难听点就是乱用)，不知道是英文翻译的问题还是开发人员的水平问题，各种词汇就很让人摸不着头脑，最常见也是最广泛的就是调试技术了。&lt;/p>
 &lt;h2 id="常见词汇及其含义">常见词汇及其含义&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -32,7 +32,7 @@
  &lt;tr>
  &lt;td>下载器/烧录器/编程器&lt;/td>
  &lt;td>Programmer&lt;/td>
- &lt;td>一般简写成 PG，&lt;!-- raw HTML omitted -->Programmer 主要修改只读存储器中的程序，Programmer 通常与计算机连接，再配合编程软件使用。如果功能上和 Monitor 一样这样的硬件通常也叫做 &lt;code>Debug Adapter&lt;/code> ，但是在某些一些系统中专指烧写外部 FLASH 的设备并不是调试探针。&lt;!-- raw HTML omitted -->&lt;/td>
+ &lt;td>一般简写成 PG，&lt;!-- raw HTML omitted -->Programmer 主要修改只读存储器中的程序，Programmer 通常与计算机连接，再配合编程软件使用。如果功能上和 Monitor 一样这样的硬件通常也叫做 &lt;code>Debug Adapter&lt;/code> ，但是在某些系统中专指烧写外部 FLASH 的设备并不是调试探针。&lt;!-- raw HTML omitted -->&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
