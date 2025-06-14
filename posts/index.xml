@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Slickzz Blogs</title><link>/posts/</link><description>Recent content in Posts on Slickzz Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 13 Jun 2025 17:32:53 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>NETXDUO概述</title><link>/posts/netxduo%E6%A6%82%E8%BF%B0/</link><pubDate>Fri, 13 Jun 2025 17:32:53 +0800</pubDate><guid>/posts/netxduo%E6%A6%82%E8%BF%B0/</guid><description>&lt;h2 id="简介">简介&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Slickzz Blogs</title><link>/posts/</link><description>Recent content in Posts on Slickzz Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 15 Jun 2025 00:02:35 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>嵌入式调试词汇扫盲</title><link>/posts/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%B0%83%E8%AF%95%E8%AF%8D%E6%B1%87%E6%89%AB%E7%9B%B2/</link><pubDate>Sun, 15 Jun 2025 00:02:35 +0800</pubDate><guid>/posts/%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%B0%83%E8%AF%95%E8%AF%8D%E6%B1%87%E6%89%AB%E7%9B%B2/</guid><description>&lt;p>现如今嵌入式计算机的调试技术已经很丰富了，有许许多多的软件和硬件去帮助程序员找出嵌入式软件上的逻辑漏洞以及嵌入式硬件上的缺陷等等。但是很多东西在概念上就存在大量的混用(ps:说难听点就是乱用)，不知道是英文翻译的问题还是开发人员的水平问题，各种词汇就很让人摸不着头脑，最常见也是最广泛的就是调试技术了。&lt;/p>
+&lt;h2 id="常见词汇及其含义">常见词汇及其含义&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;strong>中文&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>英文&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>含义&lt;/strong>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>调试器&lt;/td>
+ &lt;td>Debugger&lt;/td>
+ &lt;td>调试器是一个笼统的概念，通常用来&lt;!-- raw HTML omitted -->查看代码在运行时正在执行的操作， 可以逐步浏览代码并查看变量中存储的值，可以设置变量的监视，以查看值何时发生更改，可以检查代码的执行路径，等等。在嵌入式软件中的区别就是本地调试还是跨平台调试，如果是本地调试的话，调试器本质上是一个软件；如果是跨平台的话在软件的基础上，还得有一套硬件的支持，而这个硬件就是下面的仿真器。&lt;!-- raw HTML omitted -->&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>监视器&lt;/td>
+ &lt;td>Monitor&lt;/td>
+ &lt;td>与真实硬件交互。 监控器需要连接并控制实际的物理 MCU 芯片。它在运行时观察和修改 MCU 内部的真实状态（寄存器、内存、外设）。从一些角度来说，所谓的监视器是属于调试器的，它是调试器的软件基础，就是跨平台调试器中所指得软件之一。最常见的软件就是OpenOCD、J-Link Software、Segger Ozone 等等。可以看到上面提到的软件有的是命令行工具(CLI)有的是有可视化界面的，其中 OpenOCD 在 VSC 中可以配合Cortex-Debug 插件使用可视化界面。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>仿真器&lt;/td>
+ &lt;td>Emulator&lt;/td>
+ &lt;td>也叫做调试探针（如 ST-Link, J-Link, DAPLink）连接到 MCU 的专用调试接口（如 JTAG, SWD）。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>模拟器&lt;/td>
+ &lt;td>Simulator&lt;/td>
+ &lt;td>软件虚拟硬件。 模拟器在 PC 上运行一个软件模型来模仿目标 MCU 的行为，不需要连接任何物理硬件。它模拟 CPU 内核、内存（Flash/RAM）以及（部分）外设的逻辑行为。常见模拟器有 &lt;!-- raw HTML omitted -->Keil µVision Simulator、QEMU 等。&lt;!-- raw HTML omitted -->&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>下载器/烧录器/编程器&lt;/td>
+ &lt;td>Programmer&lt;/td>
+ &lt;td>一般简写成 PG，&lt;!-- raw HTML omitted -->Programmer 主要修改只读存储器中的程序，Programmer 通常与计算机连接，再配合编程软件使用。如果功能上和 Monitor 一样这样的硬件通常也叫做 &lt;code>Debug Adapter&lt;/code> ，但是在某些一些系统中专指烧写外部 FLASH 的设备并不是调试探针。&lt;!-- raw HTML omitted -->&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="嵌入式软件调试">嵌入式软件调试&lt;/h2>
+&lt;p>
+&lt;figure style="text-align: center;">
+ &lt;img src="/images/embedded_wods/debug.png" alt="" />
+ &lt;figcaption>嵌入式调试示意图&lt;/figcaption>
+&lt;/figure>&lt;/p></description></item><item><title>NETXDUO概述</title><link>/posts/netxduo%E6%A6%82%E8%BF%B0/</link><pubDate>Fri, 13 Jun 2025 17:32:53 +0800</pubDate><guid>/posts/netxduo%E6%A6%82%E8%BF%B0/</guid><description>&lt;h2 id="简介">简介&lt;/h2>
 &lt;p>Azure RTOS NetX Duo 是一个双 IPv4 和 IPv6 TCP/IP 网络堆栈，专为深度嵌入式、实时和物联网应用而设计。它具有多种功能。除了 TCP/IP IPv4/IPv6 网络堆栈外，它还提供了一个实现标准加密和哈希方法的加密库，以及一个支持安全网络连接的 TLS/DTLS 库。&lt;/p>
 &lt;p>
 &lt;figure style="text-align: center;">
