@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slickzz Blogs</title><link>/</link><description>Recent content on Slickzz Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 13 Jun 2025 17:32:53 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>NETXDUO概述</title><link>/posts/netxduo%E6%A6%82%E8%BF%B0/</link><pubDate>Fri, 13 Jun 2025 17:32:53 +0800</pubDate><guid>/posts/netxduo%E6%A6%82%E8%BF%B0/</guid><description>&lt;h2 id="简介">简介&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slickzz Blogs</title><link>/</link><description>Recent content on Slickzz Blogs</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 14 Jun 2025 15:08:45 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>一些反思1</title><link>/notes/%E4%B8%80%E4%BA%9B%E5%8F%8D%E6%80%9D1/</link><pubDate>Sat, 14 Jun 2025 15:08:45 +0800</pubDate><guid>/notes/%E4%B8%80%E4%BA%9B%E5%8F%8D%E6%80%9D1/</guid><description>&lt;h2 id="被电子鸦片荼毒">被电子鸦片荼毒&lt;/h2>
+&lt;p>不知道为什么，自己的生活和思考的时间都被短视频给充斥了，生活似乎离开了这些陡然无味，无论是抖音或是 B 站把自己空余的时间都给填满了，时间管理大师吗？
+本来有更多有意义的事情是可以去做的，但自己潜意识里似乎在这些短视频中不能自拔，犹如中毒了一般，这确实是一种病，一种很严重的病。自己似乎也发现了很难去静下来去长链思考，代码敲着敲着打开浏览器就不知道为啥去刷短视频了，哎，要拯救自己啊啊啊！！！&lt;/p>
+&lt;p>自己要把时间花在更有意义的目标上去：多读书、多敲代码、多锻炼！！！&lt;/p>
+&lt;h2 id="学好外语">学好外语&lt;/h2>
+&lt;p>考研结束很久了自己也很久没学英语了，真切地感受到自己英语水平大幅度下滑，尤其是阅读地能力(ps:口语几乎为零，太菜了)，搞点英语技术的书看看，多背背单词吧就。&lt;/p>
+&lt;h2 id="计划好的事情一定要做好不单是对自己负责更是对自己的锻炼">计划好的事情一定要做好，不单是对自己负责更是对自己的锻炼&lt;/h2>
+&lt;p>报考软件工程的最大目的就是让自己能够有计划且科学的敲代码，但实际上还是缺少工程实践的锻炼。不要太多的去胡思乱想且用学生思维去学习，直接“干中练”，后续再有时间系统性学习吧，先学习的话真有那种感觉自己会了的错感，实际去弄还是菜菜狗。&lt;/p></description></item><item><title>NETXDUO概述</title><link>/posts/netxduo%E6%A6%82%E8%BF%B0/</link><pubDate>Fri, 13 Jun 2025 17:32:53 +0800</pubDate><guid>/posts/netxduo%E6%A6%82%E8%BF%B0/</guid><description>&lt;h2 id="简介">简介&lt;/h2>
 &lt;p>Azure RTOS NetX Duo 是一个双 IPv4 和 IPv6 TCP/IP 网络堆栈，专为深度嵌入式、实时和物联网应用而设计。它具有多种功能。除了 TCP/IP IPv4/IPv6 网络堆栈外，它还提供了一个实现标准加密和哈希方法的加密库，以及一个支持安全网络连接的 TLS/DTLS 库。&lt;/p>
 &lt;p>
 &lt;figure style="text-align: center;">
